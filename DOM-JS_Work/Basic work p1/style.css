@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+h1{
+    font-size: 60px;
+    color: blueviolet;
+}
+
+h2{
+    font-size: 60px;
+    color: rgb(30, 118, 218);
+}
+
+.btn1{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translateY(-50%);
+   height: 30px;
+   width: 80px;
+    
+}
+
+
+.bulb{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color:#fff;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-left: 730px;
+    margin-top: 130px;
+}
+.btn2{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    bottom: 30%;
+    transform: translateY(1100%);
+    height: 30px;
+    width: 80px;    
+    font-size: 15px;
+ }
+
