@@ -43,6 +43,8 @@ btn2.addEventListener("click",function(){
     }
 });
 
+let box = document.querySelector("#box");
+box.innerHTML = `<h1>Hello</h1>`
 
 
 
