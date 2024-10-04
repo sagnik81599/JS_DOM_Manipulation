@@ -47,3 +47,14 @@ h2{
     font-size: 15px;
  }
 
+
+#box{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: burlywood;
+    margin-top: 120px;
+    margin-left: 20px;
+
+}
+
