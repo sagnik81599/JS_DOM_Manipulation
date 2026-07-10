@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">show data</button>
+
+    <ol id ="userlist">
+
+    </ol>
+    
+
+
+    <script>
+               const btn1 = document.getElementById("btn");
+               btn1.addEventListener("click",() =>{
+                   // Functionality for showing data
+                //   alert("Data will be displayed");
+                const data = fetch('https://jsonplaceholder.typicode.com/users')
+                .then((res)=>res.json())//by usinf promises we can get the data in json format
+                .then((data)=>{
+                    // console.log(data);
+                  data.map((user)=>{
+                    const li = document.createElement("li");
+                    li.innerHTML = user.name;
+                    document.getElementById("userlist").appendChild(li);
+                  }
+                )
+                })
+               });
+    </script>
+</body>
+</html>
